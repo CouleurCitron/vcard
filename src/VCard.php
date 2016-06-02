@@ -201,7 +201,7 @@ class VCard
 
             $type = strtoupper(str_replace('image/', '', $mimetype));
 
-            $property .= ";ENCODING=b;TYPE=" . $type;
+            $property .= ";ENCODING=BASE64;TYPE=" . $type;
         } else {
             if (filter_var($url, FILTER_VALIDATE_URL) !== FALSE) {
                 $propertySuffix = ';VALUE=URL';
