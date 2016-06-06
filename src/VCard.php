@@ -379,7 +379,7 @@ class VCard
         $properties = $this->getProperties();
         foreach ($properties as $property) {
             // add to string
-            $string .= $this->fold($property['key'] . ':' . $property['value'] . "\r\n");
+            $string .= $property['key'] . ':' . $property['value'] . "\r\n";
         }
 
         // add to string
